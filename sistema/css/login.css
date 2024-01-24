@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background: #eaeff4;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+
+  width: 100%;
+  max-width: 600px;
+  height: max-content;
+  display: flex;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px #999999;
+}
+
+.col-left,
+.col-right {
+  height: 420px;
+  padding: 10px;
+  display: flex;
+}
+
+.col-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url('../img/cen.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-color:#262322;
+}
+
+.col-right {
+  background-color: #c5baaf;
+  padding: 20px 30px;
+  width: 50%;
+  margin-left: -10%;
+}
+
+.col-left,
+  .col-right {
+    width: 100%;
+    margin: 0;
+
+  }
+
+.login-text {
+  display: none;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  color: #000;
+}
+
+.login-text h2 {
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.login-text p {
+  margin: 20px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+
+.login-form {
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+
+.login-form h2 {
+  text-align: center;
+	color: #000;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.login-form label {
+	font-size: 20px;
+  font-weight: 600;
+	text-align: center;
+	margin:  5px;
+  	display: block;
+  	letter-spacing: .5px;
+}
+
+.login-form .imge{
+  background-image: url('../img/persona.png');
+  background-size: 100% 100%;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  right: 25px;
+  top: -43px;
+} 
+.login-form .img2{
+  background-image: url('../img/cerrar.png');
+  background-size: 100% 100%;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  right: 25px;
+  top: -43px;
+} 
+
+.login-form input {
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin:  8px;
+  padding: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #303841;
+}
+
+.login-form input:focus {
+  border-color: #ff574e;
+}
+
+.login-form input[type="submit"]{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 0 #000;
+  transition: 900ms;
+}
+
+.login-form input[type="submit"]:hover{
+  color: #000;
+  box-shadow: inset 250px 0 0 0 #e1ce7a;
+}
